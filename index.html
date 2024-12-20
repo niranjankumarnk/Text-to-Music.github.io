@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Masked Diffusion Transformer for Music Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .links a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        .authors {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .authors h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .author-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .author {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            width: 45%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .author strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #007BFF;
+        }
+
+        .author em {
+            display: block;
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .author a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .author a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .author {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Masked Diffusion Transformer for Music Generation</h1>
+
+    <div class="links">
+        <a href="#">📄 Paper Link</a>
+        <a href="https://github.com/Anonymous-2025-students/Text-To-Music">💻 GitHub Link</a>
+    </div>
+
+    <div class="authors">
+        <h2>Authors</h2>
+        <div class="author-list">
+            <div class="author">
+                <strong>Vaibhav Rajendrakumar Mishra</strong>
+                <em>MS in Artificial Intelligence</em>
+                <p>Yeshiva University, New York, USA</p>
+                <a href="mailto:vmishra1@mail.yu.edu">vmishra1@mail.yu.edu</a>
+            </div>
+
+            <div class="author">
+                <strong>Niranjan Kumar Kishore Kumar</strong>
+                <em>MS in Artificial Intelligence</em>
+                <p>Yeshiva University, New York, USA</p>
+                <a href="mailto:nkishore@mail.yu.edu">nkishore@mail.yu.edu</a>
+            </div>
+
+            <div class="author">
+                <strong>Sahil Kumar</strong>
+                <em>PhD in Mathematics</em>
+                <p>Yeshiva University, New York, USA</p>
+                <a href="mailto:skumar4@mailyu.edu">skumar4@mailyu.edu</a>
+            </div>
+
+            <div class="author">
+                <strong>Youshan Zhang</strong>
+                <em>Department of Computer Science and Engineering</em>
+                <p>Yeshiva University, New York, USA</p>
+                <a href="mailto:youshan.zhang@yu.edu">youshan.zhang@yu.edu</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>
+            Text-to-music (TTM) generation using diffusion models faces challenges due to the scarcity of high-quality paired datasets, resulting in limited output diversity and fidelity. To address these challenges, we propose a novel framework that incorporates a <strong>Masked Diffusion Transformer (MDT)</strong> with quality-aware training. The MDT architecture dynamically adapts to varying input quality and effectively models complex temporal and harmonic dependencies in music.
+        </p>
+        <p>
+            Additionally, a <strong>multi-stage caption refinement process</strong> ensures enhanced alignment between textual inputs and musical outputs. Our approach improves musical coherence and provides a scalable solution for generating high-fidelity music from text descriptions. Extensive experiments conducted on diverse datasets, including <strong>MusicCaps</strong>, <strong>Song-Describer</strong>, and a custom <strong>Hugging Face</strong> compilation, demonstrate state-of-the-art performance in metrics such as <strong>Fréchet Audio Distance (FAD)</strong>, <strong>KL Divergence</strong>, and <strong>Inception Score (IS)</strong>. This work significantly advances TTM research and contributes to practical generative music applications.
+        </p>
+    </div>
+    
+    <!-- Jazz Section -->
+    <section class="comparison-card">
+        <h2>🎷 Jazz Music</h2>
+        <p><strong>Prompt:</strong> "Generate a Jazz Music"</p>
+        <div class="audio-players">
+            <div class="audio-section">
+                <h3>Our Model</h3>
+                <audio controls>
+                    <source src="Our_model\jazz_finetuned (2).wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>AudioLDM2</h3>
+                <audio controls>
+                    <source src="Audioldm2\jazz_audioldm2.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>MusicGen</h3>
+                <audio controls>
+                    <source src="MusicGen\jazz_musicgen.wav" type="audio/wav">
+                </audio>
+            </div>
+        <!-- </div>
+        <div class="images">
+            <h3>Our Model: Mel Spectrogram</h3>
+            <img src="images/jazz_our_model_mel.png" alt="Our Model Jazz Mel Spectrogram">
+            <h3>Our Model: Waveform</h3>
+            <img src="images/jazz_our_model_waveform.png" alt="Our Model Jazz Waveform">
+        </div> -->
+    </section>
+
+    <!-- Hiphop Section -->
+    <section class="comparison-card">
+        <h2>🎤 Hiphop Music</h2>
+        <p><strong>Prompt:</strong> "Generate a Hiphop Music"</p>
+        <div class="audio-players">
+            <div class="audio-section">
+                <h3>Our Model</h3>
+                <audio controls>
+                    <source src="Our_model\hiphop_finetuned_music (1) (2).wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>AudioLDM2</h3>
+                <audio controls>
+                    <source src="Audioldm2\hiphop_audioldm2.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>MusicGen</h3>
+                <audio controls>
+                    <source src="MusicGen\hiphop_musicgen.wav" type="audio/wav">
+                </audio>
+            </div>
+        <!-- </div>
+        <div class="images">
+            <h3>Our Model: Mel Spectrogram</h3>
+            <img src="images/hiphop_our_model_mel.png" alt="Our Model Hiphop Mel Spectrogram">
+            <h3>Our Model: Waveform</h3>
+            <img src="images/hiphop_our_model_waveform.png" alt="Our Model Hiphop Waveform">
+        </div> -->
+    </section>
+
+    <!-- Random Section -->
+    <section class="comparison-card">
+        <h2>🎶 Random Music</h2>
+        <p><strong>Prompt:</strong> "Generate a Random Music"</p>
+        <div class="audio-players">
+            <div class="audio-section">
+                <h3>Our Model</h3>
+                <audio controls>
+                    <source src="Our_model\finetuned_random.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>AudioLDM2</h3>
+                <audio controls>
+                    <source src="Audioldm2\random_audioldm2.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div class="audio-section">
+                <h3>MusicGen</h3>
+                <audio controls>
+                    <source src="MusicGen\random_musicgen.wav" type="audio/wav">
+                </audio>
+            </div>
+        <!-- </div>
+        <div class="images">
+            <h3>Our Model: Mel Spectrogram</h3>
+            <img src="images/random_our_model_mel.png" alt="Our Model Random Mel Spectrogram">
+            <h3>Our Model: Waveform</h3>
+            <img src="images/random_our_model_waveform.png" alt="Our Model Random Waveform">
+        </div> -->
+    </section>
+
+</body>
+</html>
