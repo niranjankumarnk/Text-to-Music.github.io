@@ -152,9 +152,23 @@
     </div>
 
     <div class="architecture">
-        <h2>Architecture Diagram</h2>
+        <h2>Architecture</h2>
         <img src="architecture.png" alt="Masked Diffusion Transformer Architecture">
-        <p><em>Figure: The architecture of the Masked Diffusion Transformer (MDT) for text-to-music generation.</em></p>
+        <p>The <strong>Masked Diffusion Transformer (MDT)</strong> architecture consists of 20 encoder layers and 8 decoder layers, optimizing performance and computational efficiency. The deeper encoder captures complex temporal and harmonic dependencies, while the decoder reconstructs audio features efficiently. The MDT processes audio using a patch-based approach (1 × 4 patch size) to enhance memory usage and preserve temporal granularity.
+        </p>
+    </div>
+
+    <div class="results">
+        <h2>Results</h2>
+        <p>
+            Our proposed MDT outperforms baseline architectures like the CNN-based U-Net and the simplified Diffusion Transformer (DiT) in both quality and alignment metrics. Experiments conducted on datasets such as <strong>MusicCaps</strong>, <strong>Song-Describer</strong>, and a custom <strong>Hugging Face</strong> compilation demonstrate superior performance in <strong>Fréchet Audio Distance (FAD)</strong>, <strong>KL Divergence</strong>, and <strong>Inception Score (IS)</strong>. The MDT achieves state-of-the-art results while maintaining computational efficiency, trained on NVIDIA A100 GPUs with a batch size of 64 and a learning rate of 8 × 10⁻⁵ over 42,800 steps.
+        </p>
+
+        <div class="summary">
+            <p>
+                The <strong>Masked Diffusion Transformer (MDT)</strong> achieved the lowest <strong>Fréchet Audio Distance (FAD)</strong> of 1.70, indicating superior perceptual quality, and the highest <strong>Inception Score (IS)</strong> of 2.73, reflecting exceptional diversity. Additionally, MDT recorded a <strong>CLAP score</strong> of 0.37, surpassing competitors like <strong>AudioLDM2</strong> and <strong>MusicGen</strong>, highlighting its enhanced text-to-audio alignment. These results validate MDT's robustness in generating high-fidelity, coherent, and contextually accurate music.
+            </p>
+        </div>
     </div>
     
     <!-- Jazz Section -->

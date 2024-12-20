@@ -87,6 +87,23 @@ h1 {
     font-size: 1.1em;
 }
 
+.architecture, .results {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.architecture h2, .results h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
 .architecture img {
     width:100%;
     max-width: 750px;
@@ -100,6 +117,8 @@ h1 {
     text-align: center;
     font-size: 1.1em;
 }
+
+
 
 .comparison-card {
     background: #fff;
