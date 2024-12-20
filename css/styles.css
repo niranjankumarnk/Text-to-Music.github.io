@@ -87,6 +87,20 @@ h1 {
     font-size: 1.1em;
 }
 
+.architecture img {
+    width:100%;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.architecture p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
 .comparison-card {
     background: #fff;
     border-radius: 10px;
